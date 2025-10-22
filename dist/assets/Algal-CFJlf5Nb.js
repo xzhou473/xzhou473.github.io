@@ -1,0 +1,8 @@
+const a=`title: Algal Bloom
+description: 
+Nuisance and harmful algal blooms threaten water quality, drinking water security, and coastal economies. My research employs both statistical and process-based modeling approaches to examine the biophysical interactions that drive the initiation of these events, as well as the factors that shape their spatial distribution and temporal variation during bloom development. My past work has focused on three bloom types: the nuisance growth of ***Cladophora*** in the Lake Michigan, **Cyanobacterial Harmful Algal Blooms** in western Lake Erie, and **Sargassum Blooms** in the Atlantic Ocean.
+figures:
+- /research/algal_1.png | Modeled surface microcystin (MC) concentrations 10 days after the observed initial field (a), with considering MC production (WMC,c) and without considering it (WOMC, d), and their comparison with a map derived from field observations (b).
+- /research/algal_2.png | Observed and modeled time series of Sargassum biomass across the Great Atlantic Sargassum Belt.
+
+`;export{a as default};

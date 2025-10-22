@@ -1,0 +1,5 @@
+title: Emerging Contaminant
+description: 
+Lagrangian particle tracking and Eulerian tracer modeling are powerful tools for understanding the transport, dispersal, and fate of contaminants in aquatic systems. My research applies these approaches to emerging contaminants (e.g., microplastics, PFAS) to investigate their spatial and temporal distribution and to evaluate how they threaten aquatic ecosystems.
+figures:
+- /research/MPs_1.png | Spatial overlap between simulated non-settled microplastics in the northern Gulf of Mexico and the habitats of highly impacted species.
