@@ -270,7 +270,7 @@ function Research(){
           }
 
           // ALGAL: two columns → left text | right stacked figs (top & bottom)
-          if (id === "Algal") {
+          if (id === "algal") {
             return (
               <section key={p.id} className="panel panel-grid2" style={{ background:p._bg }}>
                 <div className="col-text">
@@ -290,7 +290,7 @@ function Research(){
           }
 
           // WHATIF: 3 columns → left text | middle = first (big) fig | right = stacked remaining figs
-          if (id === "Whatif") {
+          if (id === "whatif") {
             const big = figs[0];
             const side = figs.slice(1);
             return (
@@ -322,7 +322,7 @@ function Research(){
           }
 
           // MPs: default layout (text on top, figures below)
-          if (id === "MPs") {
+          if (id === "mps") {
             return (
               <section key={p.id} className="panel panel-default" style={{ background:p._bg }}>
                 <h3 className="pixel" dangerouslySetInnerHTML={{__html: p.title}} />
