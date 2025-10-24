@@ -2,4 +2,4 @@ title: Algal Bloom
 description: 
 Nuisance and harmful algal blooms threaten water quality, drinking water security, and coastal economies. My research, in collaboration with laboratory and field researchers, employs both statistical and process-based modeling approaches to investigate the biophysical interactions that influence the initiation and development of these events, and to predict their short-term and long-term variability through the assimilation of observations. My past work has focused on three bloom types: the nuisance growth of *Cladophora* in Lake Michigan, cyanobacterial harmful algal blooms in western Lake Erie, and Sargassum blooms in the Atlantic Ocean.
 figures:
-- /research/algal_1.png | test
+- /research/algal_1.webp | test
