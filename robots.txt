@@ -1,0 +1,5 @@
+# robots.txt — allows all crawlers to index everything
+User-agent: *
+Allow: /
+Sitemap: https://xzhou473.github.io/sitemap.xml
+
