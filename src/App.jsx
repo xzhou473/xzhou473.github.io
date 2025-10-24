@@ -219,7 +219,7 @@ function Home(){
         </div>
         <div>
           <h2 className="hello pixel">HELLO</h2>
-          <p className="lead">My name is Xing Zhou — welcome to my website! I am a limnologist, oceanographer, and modeler exploring ecosystem dynamics and biogeochemical cycles in large water bodies, including lakes and oceans. I earned my Ph.D. in 2023 from Michigan Technological University under the supervision of Dr. Pengfei Xue and am currently a postdoctoral fellow at the Georgia Institute of Technology working with Dr. Annalisa Bracco. I have extensive experience in the development and applications of regional ocean models (e.g., FVCOM, CROCO), biogeochemical modules (e.g., PISCES), biophysical models (e.g., Ichthyop), as well as in incorporating them with advanced AI techniques.</p>
+          <p className="lead">My name is Xing Zhou — welcome to my website! I am a limnologist, oceanographer, and modeler exploring ecosystem dynamics and biogeochemical cycles in large water bodies, including lakes and oceans, with past research experience focusing on the Laurentian Great Lakes and the northern Gulf of Mexico. I earned my Ph.D. in 2023 from Michigan Technological University under the supervision of Dr. Pengfei Xue and am currently a postdoctoral fellow at the Georgia Institute of Technology working with Dr. Annalisa Bracco. I have extensive experience in the development and applications of regional ocean models (e.g., FVCOM, CROCO), biogeochemical modules (e.g., PISCES), biophysical models (e.g., Ichthyop), as well as in incorporating them with advanced AI techniques.</p>
         </div>
       </div>
     </div>
@@ -238,91 +238,117 @@ function Research(){
           const id = (p.id || "").toLowerCase();
 
           // LARVAL: left text | middle stack (all but last) | right = last fig
-          if (id === "Larval") {
-            const middle = figs.slice(0, Math.max(figs.length - 1, 0));
-            const right = figs[figs.length - 1];
-            return (
-              <section key={p.id} className="panel panel-grid3" style={{ background:p._bg }}>
-                <div className="col-text">
-                  <h3 className="pixel" dangerouslySetInnerHTML={{__html: p.title}} />
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{p.description || ""}</ReactMarkdown>
-                </div>
+          if (id === "larval") {
+           return (
+            <section
+            key={p.id}
+            className="panel"
+            style={{
+              background: p._bg,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              textAlign: "left",
+            }}
+           >
+            <div className="panel panel-default">
+              <h3 className="pixel" dangerouslySetInnerHTML={{ __html: p.title }} />
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {p.description || ""}
+              </ReactMarkdown>
+            </div>
 
-                <div className="stack">
-                  {middle.map((f, idx) => (
-                    <figure key={idx}>
-                      <img className="fig" src={f.src} alt={f.caption || "figure"} />
-                      {f.caption && <figcaption className="caption">{f.caption}</figcaption>}
-                    </figure>
-                  ))}
-                </div>
+            <div className="col-figure" style={{ marginTop: 20 }}>
+              {figs.map((f, idx) => (
+                <img
+                  key={idx}
+                  className="fig"
+                  src={f.src}
+                  alt={`figure-${idx}`}
+                  style={{ maxWidth: "100%", height: "auto", marginBottom: 10 }}
+                />
+              ))}
+            </div>
+          </section>
+         );
+        }
 
-                <div>
-                  {right && (
-                    <figure>
-                      <img className="fig" src={right.src} alt={right.caption || "figure"} />
-                      {right.caption && <figcaption className="caption">{right.caption}</figcaption>}
-                    </figure>
-                  )}
-                </div>
-              </section>
-            );
-          }
 
-          // ALGAL: two columns → left text | right stacked figs (top & bottom)
+          // ALGAL
           if (id === "algal") {
-            return (
-              <section key={p.id} className="panel panel-grid2" style={{ background:p._bg }}>
-                <div className="col-text">
-                  <h3 className="pixel" dangerouslySetInnerHTML={{__html: p.title}} />
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{p.description || ""}</ReactMarkdown>
-                </div>
-                <div className="stack">
-                  {figs.map((f, idx) => (
-                    <figure key={idx}>
-                      <img className="fig" src={f.src} alt={f.caption || "figure"} />
-                      {f.caption && <figcaption className="caption">{f.caption}</figcaption>}
-                    </figure>
-                  ))}
-                </div>
-              </section>
-            );
-          }
+           return (
+            <section
+            key={p.id}
+            className="panel"
+            style={{
+              background: p._bg,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              textAlign: "left",
+            }}
+           >
+            <div className="panel panel-default">
+              <h3 className="pixel" dangerouslySetInnerHTML={{ __html: p.title }} />
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {p.description || ""}
+              </ReactMarkdown>
+            </div>
+
+            <div className="col-figure" style={{ marginTop: 20 }}>
+              {figs.map((f, idx) => (
+                <img
+                  key={idx}
+                  className="fig"
+                  src={f.src}
+                  alt={`figure-${idx}`}
+                  style={{ maxWidth: "100%", height: "auto", marginBottom: 10 }}
+                />
+              ))}
+            </div>
+          </section>
+         );
+        }
 
           // WHATIF: 3 columns → left text | middle = first (big) fig | right = stacked remaining figs
           if (id === "whatif") {
-            const big = figs[0];
-            const side = figs.slice(1);
-            return (
-              <section key={p.id} className="panel panel-grid3" style={{ background:p._bg }}>
-                <div className="col-text">
-                  <h3 className="pixel" dangerouslySetInnerHTML={{__html: p.title}} />
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{p.description || ""}</ReactMarkdown>
-                </div>
+           return (
+            <section
+            key={p.id}
+            className="panel"
+            style={{
+              background: p._bg,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              textAlign: "left",
+            }}
+           >
+            <div className="panel panel-default">
+              <h3 className="pixel" dangerouslySetInnerHTML={{ __html: p.title }} />
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {p.description || ""}
+              </ReactMarkdown>
+            </div>
 
-                <div>
-                  {big && (
-                    <figure>
-                      <img className="fig" src={big.src} alt={big.caption || "figure"} />
-                      {big.caption && <figcaption className="caption">{big.caption}</figcaption>}
-                    </figure>
-                  )}
-                </div>
+            <div className="col-figure" style={{ marginTop: 20 }}>
+              {figs.map((f, idx) => (
+                <img
+                  key={idx}
+                  className="fig"
+                  src={f.src}
+                  alt={`figure-${idx}`}
+                  style={{ maxWidth: "100%", height: "auto", marginBottom: 10 }}
+                />
+              ))}
+            </div>
+          </section>
+         );
+        }
 
-                <div className="stack">
-                  {side.map((f, idx) => (
-                    <figure key={idx}>
-                      <img className="fig" src={f.src} alt={f.caption || "figure"} />
-                      {f.caption && <figcaption className="caption">{f.caption}</figcaption>}
-                    </figure>
-                  ))}
-                </div>
-              </section>
-            );
-          }
 
           // MPs: default layout (text on top, figures below)
-          if (id === "mps") {
+        if (id === "mps") { 
             return (
               <section key={p.id} className="panel panel-default" style={{ background:p._bg }}>
                 <h3 className="pixel" dangerouslySetInnerHTML={{__html: p.title}} />
@@ -336,6 +362,8 @@ function Research(){
               </section>
             );
           }
+
+
 
           // DEFAULT: original stacked layout
           return (

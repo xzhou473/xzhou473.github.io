@@ -2,5 +2,4 @@ title: What-If Scenario
 description:
 A key strength of modeling lies in its ability to explore “what-if” scenarios, investigating how ecosystems may respond to climate change or proposed human interventions. My specific interest focuses on how aquatic ecosystems and biogeochemical cycles may be altered under **projected future climate scenarios** and **large-scale Earth engineering strategies** aimed at removing atmospheric CO₂ (e.g., alkalinity enhancement, enhanced weathering).
 figures:
-- /research/whatif_1.png |Modeled offshore vertical chlorophyll concentration distribution in Lake Michigan for historical average, extreme, and future projection scenarios, indicating a strong impact of the lake mixing regime shift.
-- /research/whatif_2.png | Modeled CO₂ uptake efficiency in the Gulf of Mexico under different proposed upstream river-based alkalinity enhancement (AE) and enhanced weathering (EW) scenarios.
+- /research/whatif_1.png | test
