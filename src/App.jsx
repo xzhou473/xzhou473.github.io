@@ -4,7 +4,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { HashRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm"
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 
 
@@ -200,26 +200,54 @@ function Home(){
         <div>
           <img src="/portrait.png" alt="Xing Zhou" className="hero-img" />
           <div className="socials">
-  	    <a className="chip" href="https://www.linkedin.com/in/xing-zhou-39ab16202/" target="_blank" rel="noreferrer">
-    	     <FaLinkedin style={{ color: "#0A66C2", width: "20px", height: "20px" }} />
-    	     LinkedIn
-  	    </a>
-
-  	    <a className="chip" href="https://scholar.google.com/citations?user=1sSh4GAAAAAJ&hl=en" target="_blank" rel="noreferrer">
-    	     <SiGooglescholar style={{ color: "#4285F4", width: "20px", height: "20px" }} />
-             Google Scholar
+  	        <a
+              className="chip"
+              href="https://www.linkedin.com/in/xing-zhou-39ab16202/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin style={{ color: "#0A66C2", width: "20px", height: "20px" }} />
+              LinkedIn
             </a>
 
-	    <a className="chip" href="https://github.com/xzhou473" target="_blank" rel="noreferrer">
-    	     <FaGithub style={{ color: "#181717", width: "20px", height: "20px" }} />
-             GitHub
+            <a
+              className="chip"
+              href="https://scholar.google.com/citations?user=1sSh4GAAAAAJ&hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiGooglescholar style={{ color: "#4285F4", width: "20px", height: "20px" }} />
+              Google Scholar
+            </a>
+
+            <a
+              className="chip"
+              href="https://github.com/xzhou473"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub style={{ color: "#181717", width: "20px", height: "20px" }} />
+              GitHub
+            </a>
+
+            <a className="chip" href="mailto:xzhou473@gatech.edu">
+              <FaEnvelope style={{ color: "#EA4335", width: "20px", height: "20px" }} />
+              Email
             </a>
           </div>
-
         </div>
+
         <div>
           <h2 className="hello pixel">HELLO</h2>
-          <p className="lead">My name is Xing Zhou — welcome to my website! I am a limnologist, oceanographer, and modeler exploring ecosystem dynamics and biogeochemical cycles in large water bodies, including lakes and oceans, with past research experience focusing on the Laurentian Great Lakes and the northern Gulf of Mexico. I earned my Ph.D. in 2023 from Michigan Technological University under the supervision of Dr. Pengfei Xue and am currently a postdoctoral fellow at the Georgia Institute of Technology working with Dr. Annalisa Bracco. I have extensive experience in the development and applications of regional ocean models (e.g., FVCOM, CROCO), biogeochemical modules (e.g., PISCES), biophysical models (e.g., Ichthyop), as well as in incorporating them with advanced AI techniques.</p>
+          <p className="lead">
+            My name is Xing Zhou — welcome to my website! I am a limnologist, oceanographer, and modeler exploring ecosystem dynamics and biogeochemical cycles in large water bodies, including lakes and oceans, with past research experience focusing on the Laurentian Great Lakes and the northern Gulf of Mexico. I earned my Ph.D. in 2023 from Michigan Technological University under the supervision of Dr. Pengfei Xue and am currently a postdoctoral fellow at the Georgia Institute of Technology working with Dr. Annalisa Bracco. I have extensive experience in the development and applications of regional ocean models (e.g., FVCOM, CROCO), biogeochemical modules (e.g., PISCES), biophysical models (e.g., Ichthyop), as well as in incorporating them with advanced AI techniques.
+          </p>
+          <p 
+            className="lead" 
+            style={{ color: "red", fontWeight: "bold", marginTop: "1rem" }}
+          >
+            I am currently on the faculty job market and would greatly appreciate hearing about any relevant opportunities in oceanography or limnology.
+          </p>
         </div>
       </div>
     </div>
