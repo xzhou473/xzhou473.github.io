@@ -240,13 +240,13 @@ function Home(){
         <div>
           <h2 className="hello pixel">HELLO</h2>
           <p className="lead">
-            My name is Xing Zhou — welcome to my website! I am a limnologist, oceanographer, and modeler exploring ecosystem dynamics and biogeochemical cycles in large water bodies, including lakes and oceans, with past research experience focusing on the Laurentian Great Lakes and the northern Gulf of Mexico. I earned my Ph.D. in 2023 from Michigan Technological University under the supervision of Dr. Pengfei Xue and am currently a postdoctoral fellow at the Georgia Institute of Technology working with Dr. Annalisa Bracco. I have extensive experience in the development and applications of regional ocean models (e.g., FVCOM, CROCO), biogeochemical modules (e.g., PISCES), biophysical models (e.g., Ichthyop), as well as in incorporating them with advanced AI techniques.
+            My name is Xing Zhou — welcome to my website! I am a limnologist, oceanographer, and modeler exploring regional-scale ecosystem dynamics and biogeochemical cycles in large water bodies, such as the Laurentian Great Lakes and the oceans. I earned my Ph.D. in 2023 from Michigan Technological University under the supervision of Dr. Pengfei Xue and am currently a postdoctoral fellow at the Georgia Institute of Technology working with Dr. Annalisa Bracco. I have extensive experience in developing and applying regional ocean models (e.g., FVCOM, CROCO), biogeochemical modules (e.g., PISCES), and biophysical models (e.g., Ichthyop), as well as integrating these modeling frameworks with advanced artificial intelligence techniques.
           </p>
           <p 
             className="lead" 
             style={{ color: "red", fontWeight: "bold", marginTop: "1rem" }}
           >
-            I am currently on the faculty job market and would greatly appreciate hearing about any relevant opportunities in oceanography or limnology.
+            I am currently on the job market and would greatly appreciate hearing about any relevant opportunities in oceanography or limnology.
           </p>
         </div>
       </div>
@@ -472,7 +472,7 @@ function CV(){
   return (
     <div className="wrap">
       <h1 className="h1 pixel">CV</h1>
-      <p>Open my CV: {" "}
+      <p>Open my CV (updated on 2025-11-10): {" "}
         <a className="btn" href="/cv/XingZhou_CV.pdf" target="_blank" rel="noreferrer">View CV (PDF)</a>
       </p>
     </div>

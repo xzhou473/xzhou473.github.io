@@ -1,6 +1,8 @@
 title: Larval Dispersal and Connectivity
 description: 
-Larval dispersal and connectivity for many marine organisms (e.g., fish, corals, and mussels) are critically important for sustaining species populations and maintaining biodiversity across habitats. My research involves using biophysical models incorporating various species-specific larval behaviors to simulate their dispersal and connectivity. Meanwhile, I am also leading the development of an advanced biophysical modeling framework that integrates Large Language Model (LLM) agents into the biophysical model. In this framework, the agents mimic real larval adaptive behaviors by observing and reasoning in response to changing ocean conditions.
+Larval dispersal and connectivity among marine organisms (e.g., fish, corals, and mussels) are critically important for sustaining populations and maintaining biodiversity across habitats. My research uses biophysical models that incorporate species-specific larval behaviors to simulate their dispersal and connectivity.
+
+I am also leading the development of an advanced biophysical modeling framework that integrates Large Language Model (LLM) agents into traditional biophysical models. In this framework, the agents mimic real larval adaptive behaviors by observing and reasoning in response to changing environmental conditions.
 
 figures:
 - /research/webp/larval_1.webp | test 
