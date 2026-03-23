@@ -472,7 +472,7 @@ function CV(){
   return (
     <div className="wrap">
       <h1 className="h1 pixel">CV</h1>
-      <p>Open my CV (updated on 2025-11-10): {" "}
+      <p>Open my CV (updated on 2026-03-20): {" "}
         <a className="btn" href="/cv/XingZhou_CV.pdf" target="_blank" rel="noreferrer">View CV (PDF)</a>
       </p>
     </div>
