@@ -240,7 +240,7 @@ function Home(){
         <div>
           <h2 className="hello pixel">HELLO</h2>
           <p className="lead">
-            My name is Xing Zhou — welcome to my website! I am a limnologist, oceanographer, and modeler exploring regional-scale ecosystem dynamics and biogeochemical cycles in large water bodies, such as the Laurentian Great Lakes and the oceans. I earned my Ph.D. in 2023 from Michigan Technological University under the supervision of Dr. Pengfei Xue and am currently a postdoctoral fellow at the Georgia Institute of Technology working with Dr. Annalisa Bracco. I have extensive experience in developing and applying regional ocean models (e.g., FVCOM, CROCO), biogeochemical modules (e.g., PISCES), and biophysical models (e.g., Ichthyop), as well as integrating these modeling frameworks with advanced artificial intelligence techniques.
+            My name is Xing Zhou — welcome to my website! Currently, I am an Associate Research Scientist at the Fujian Ocean Innovation Center in Xiamen, China. I identify myself as a limnologist, oceanographer, and modeler with strong interests in exploring regional-scale ecosystem dynamics and biogeochemical cycles in large water bodies, such as lakes and oceans. I am also exploring how to apply AI techniques to these topics, including digital twins and AI agents for smart ocean applications. If you want to know more about me, please check out my research, code, and CV!
           </p>
           <div className="news-section" style={{ marginTop: "1.5rem" }}>
             <h3 className="pixel">News</h3>
@@ -508,7 +508,7 @@ function CV(){
   return (
     <div className="wrap">
       <h1 className="h1 pixel">CV</h1>
-      <p>Open my CV (updated on 2026-05-08): {" "}
+      <p>Open my CV (updated on 2026-09-01): {" "}
         <a className="btn" href="/cv/XingZhou_CV.pdf" target="_blank" rel="noreferrer">View CV (PDF)</a>
       </p>
     </div>
